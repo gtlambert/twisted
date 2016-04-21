@@ -268,6 +268,20 @@ class File(resource.Resource, filepath.FilePath):
 
         If C{path} is the empty string, return a L{DirectoryLister} instead.
         """
+
+        print('finally in the get child directory!!!!!!!')
+        print('finally in the get child directory!!!!!!!')
+        print('finally in the get child directory!!!!!!!')
+        print('finally in the get child directory!!!!!!!')
+        print('finally in the get child directory!!!!!!!')
+        print('finally in the get child directory!!!!!!!')
+        print('finally in the get child directory!!!!!!!')
+        print('finally in the get child directory!!!!!!!')
+        print('finally in the get child directory!!!!!!!')
+        print('finally in the get child directory!!!!!!!')
+        print('finally in the get child directory!!!!!!!')
+        
+
         self.restat(reraise=False)
 
         if not self.isdir():
