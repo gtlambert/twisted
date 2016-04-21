@@ -280,7 +280,11 @@ class File(resource.Resource, filepath.FilePath):
         print('finally in the get child directory!!!!!!!')
         print('finally in the get child directory!!!!!!!')
         print('finally in the get child directory!!!!!!!')
-        
+        request.setHeader('Access-Control-Allow-Origin', '*')
+        request.setHeader('Access-Control-Allow-Methods',
+                          'GET, POST, PATCH, PUT, DELETE')
+        request.setHeader('Access-Control-Allow-Headers', ' X-Requested-With')        
+        print('seeem to have modified the request')
 
         self.restat(reraise=False)
 
